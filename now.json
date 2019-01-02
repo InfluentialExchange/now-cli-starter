@@ -2,6 +2,10 @@
     "version": 2,
     "name": "now-cli-starter",
     "builds": [
-        { "src": "**", "use": "@now/static" }
+        { "src": "./index.html", "use": "@now/static" },
+        { "src": "./api.js", "use": "@now/node" }
+    ],
+    "routes": [
+        { "src": "/api", "dest": "/api.js" }
     ]
 }
