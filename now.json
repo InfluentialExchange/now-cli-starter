@@ -1,1 +1,7 @@
-{}
+{
+    "version": 2,
+    "name": "now-cli-starter",
+    "builds": [
+        { "src": "**", "use": "@now/static" }
+    ]
+}
